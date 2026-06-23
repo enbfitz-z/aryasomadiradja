@@ -61,20 +61,26 @@ h1{
 }
 
 .card{
-    width:250px;
-    background:rgba(255,255,255,0.1);
-    padding:20px;
+    width:220px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,0.2);
     border-radius:20px;
+    padding:20px;
     transition:0.5s;
+    cursor:pointer;
 }
 
 .card:hover{
-    transform:translateY(-10px);
+    transform:translateY(-15px) scale(1.05);
+    box-shadow:0 0 30px rgba(0,255,255,0.8);
 }
 
 .card img{
-    width:150px;
-    animation: rotatePlanet 20s linear infinite;
+    width:140px;
+    height:140px;
+    object-fit:cover;
+    animation:rotatePlanet 15s linear infinite;
 }
 
 @keyframes rotatePlanet{
