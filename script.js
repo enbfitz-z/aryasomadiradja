@@ -38,4 +38,7 @@ neptunus:
 
 alert(data[planet]);
 
+        window.addEventListener("load", () =>{
+    document.getElementById("loader").style.display="none";
+});
 });
