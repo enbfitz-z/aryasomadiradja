@@ -1,0 +1,232 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+body{
+    font-family:'Poppins', sans-serif;
+    background:linear-gradient(180deg,#020024,#090979,#000);
+    color:white;
+    text-align:center;
+    min-height:100vh;
+    overflow-x:hidden;
+}
+
+/* Header */
+header{
+    padding:40px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+    text-shadow:0 0 15px #00ccff;
+}
+
+header p{
+    font-size:1.2rem;
+    color:#d9d9d9;
+}
+
+/* Audio */
+audio{
+    margin:20px 0;
+}
+
+/* Tata Surya */
+.solar-system{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:25px;
+    padding:40px;
+}
+
+/* Planet Umum */
+.planet{
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    color:white;
+    font-weight:bold;
+    text-align:center;
+    transition:0.4s;
+    animation:spin 15s linear infinite;
+    box-shadow:0 0 20px rgba(255,255,255,0.3);
+}
+
+.planet:hover{
+    transform:scale(1.2);
+    box-shadow:0 0 30px white;
+}
+
+/* Planet Individual */
+.mercury{
+    width:60px;
+    height:60px;
+    background:#8c8c8c;
+}
+
+.venus{
+    width:80px;
+    height:80px;
+    background:#d99036;
+}
+
+.earth{
+    width:90px;
+    height:90px;
+    background:#2b8cff;
+}
+
+.mars{
+    width:75px;
+    height:75px;
+    background:#d63d29;
+}
+
+.jupiter{
+    width:130px;
+    height:130px;
+    background:#b97a57;
+}
+
+.saturn{
+    width:120px;
+    height:120px;
+    background:#e0c068;
+    position:relative;
+}
+
+/* Cincin Saturnus */
+.saturn::before{
+    content:"";
+    position:absolute;
+    width:160px;
+    height:20px;
+    border:4px solid rgba(255,255,255,0.7);
+    border-radius:50%;
+}
+
+.uranus{
+    width:100px;
+    height:100px;
+    background:#77d9ff;
+}
+
+.neptune{
+    width:95px;
+    height:95px;
+    background:#2d5cff;
+}
+
+/* Animasi Rotasi */
+@keyframes spin{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+/* Box Informasi */
+.info{
+    width:80%;
+    max-width:800px;
+    margin:30px auto;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(8px);
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 0 20px rgba(0,255,255,0.2);
+}
+
+.info h2{
+    margin-bottom:10px;
+    color:#00d4ff;
+}
+
+.info p{
+    line-height:1.8;
+}
+
+/* Video */
+.video{
+    margin:50px auto;
+}
+
+.video h2{
+    margin-bottom:20px;
+}
+
+.video iframe{
+    width:80%;
+    max-width:900px;
+    height:500px;
+    border:none;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(255,255,255,0.2);
+}
+
+/* Kuis */
+.quiz{
+    margin:50px auto;
+    padding:20px;
+}
+
+.quiz h2{
+    margin-bottom:15px;
+}
+
+.quiz p{
+    margin-bottom:20px;
+    font-size:18px;
+}
+
+/* Tombol */
+button{
+    padding:12px 25px;
+    margin:10px;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+    cursor:pointer;
+    background:#00bfff;
+    color:white;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#00e1ff;
+    transform:translateY(-3px);
+}
+
+#hasil{
+    margin-top:20px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    header h1{
+        font-size:2rem;
+    }
+
+    .video iframe{
+        width:95%;
+        height:250px;
+    }
+
+    .planet{
+        font-size:10px;
+    }
+}
