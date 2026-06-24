@@ -7,12 +7,22 @@
 <title>Eksplor Wisata Jawa Tengah</title>
 
 <link rel="stylesheet" href="style.css">
+<script>
+window.addEventListener("load", () => {
+    const music = document.getElementById("bgMusic");
 
+    music.play().catch(() => {
+        document.addEventListener("click", () => {
+            music.play();
+        }, { once:true });
+    });
+});
+</script>
 </head>
 <body>
 
 <!-- Audio -->
-<audio controls autoplay loop>
+<audio id="bgMusic" autoplay loop>
     <source src="backsound.mp3" type="audio/mpeg">
 </audio>
 
@@ -94,8 +104,12 @@
 
     <div class="gallery">
         <img src="borobudur.jpg" alt="Borobudur">
-        <img src="borobudur.jpg" alt="Borobudur">
-        <img src="borobudur.jpg" alt="Borobudur">
+        <img src="dieng.jpg" alt="Dieng">
+        <img src="lawangsewu.jpg" alt="LawangSewu">
+        <img src="lumpia.jpg" alt="Lumpia">
+        <img src="nasiliwet.jpg" alt="NasiLiwet">
+        <img src="gambyong.jpg" alt="Gambyong">
+        <img src="batik.jpg" alt="Batik">
     </div>
 </section>
 
