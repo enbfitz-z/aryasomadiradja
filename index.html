@@ -1,55 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Eksplor Wisata Jawa Tengah</title>
 
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="style.css">
 
-<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
-
 <body>
-    
-<audio autoplay loop>
-<source src="audio/backsound.mp3" type="audio/mpeg">
+
+<!-- Audio -->
+<audio controls autoplay loop>
+    <source src="backsound.mp3" type="audio/mpeg">
 </audio>
 
+<!-- Navbar -->
 <header>
-<nav>
-<a href="index.html">Beranda</a>
-<a href="destinasi.html">Destinasi</a>
-<a href="budaya.html">Budaya</a>
-<a href="kuliner.html">Kuliner</a>
-<a href="galeri.html">Galeri</a>
-<a href="video.html">Video Wisata</a>
-<a href="kontak.html">Kontak</a>
-</nav>
+    <nav>
+        <a href="#beranda">Beranda</a>
+        <a href="#destinasi">Destinasi</a>
+        <a href="#budaya">Budaya</a>
+        <a href="#kuliner">Kuliner</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#video">Video</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
 </header>
 
+<!-- Beranda -->
 <section id="beranda" class="hero">
-<div>
-<h1>Eksplor Wisata Jawa Tengah</h1>
-<p>Pesona Alam, Budaya dan Kuliner Nusantara</p>
-</div>
+    <div>
+        <h1>Eksplor Wisata Jawa Tengah</h1>
+        <p>Pesona Alam, Budaya, dan Kuliner Nusantara</p>
+    </div>
 </section>
 
-<div class="container">
+<!-- Destinasi -->
+<section id="destinasi" class="container">
+    <div class="card">
+        <h2>🏛 Candi Borobudur</h2>
+        <p>
+            Candi Buddha terbesar di dunia yang menjadi ikon wisata Jawa Tengah.
+        </p>
+    </div>
 
-<div class="card" data-aos="fade-up">
-<h2>Selamat Datang</h2>
+    <div class="card">
+        <h2>🏔 Dataran Tinggi Dieng</h2>
+        <p>
+            Negeri di atas awan dengan pemandangan pegunungan yang indah.
+        </p>
+    </div>
+</section>
 
-<p>
-Jawa Tengah memiliki beragam destinasi wisata yang
-menawarkan keindahan alam, sejarah, budaya dan kuliner
-yang menarik untuk dijelajahi.
-</p>
+<!-- Budaya -->
+<section id="budaya" class="container">
+    <div class="card">
+        <h2>🎭 Wayang Kulit</h2>
+        <p>
+            Seni pertunjukan tradisional yang terkenal di Jawa Tengah.
+        </p>
+    </div>
 
-</div>
+    <div class="card">
+        <h2>💃 Tari Gambyong</h2>
+        <p>
+            Tarian khas Surakarta yang anggun dan mempesona.
+        </p>
+    </div>
+</section>
 
-</div>
+<!-- Kuliner -->
+<section id="kuliner" class="container">
+    <div class="card">
+        <h2>🍴 Lumpia Semarang</h2>
+        <p>
+            Kuliner khas Semarang yang terkenal hingga mancanegara.
+        </p>
+    </div>
 
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script src="js/script.js"></script>
+    <div class="card">
+        <h2>🍛 Nasi Liwet Solo</h2>
+        <p>
+            Hidangan khas Solo yang gurih dan lezat.
+        </p>
+    </div>
+</section>
+
+<!-- Galeri -->
+<section id="galeri" class="container">
+    <h2>Galeri Wisata</h2>
+
+    <div class="gallery">
+        <img src="borobudur.jpg" alt="Borobudur">
+        <img src="borobudur.jpg" alt="Borobudur">
+        <img src="borobudur.jpg" alt="Borobudur">
+    </div>
+</section>
+
+<!-- Video -->
+<section id="video" class="container">
+    <h2>Video Wisata Jawa Tengah</h2>
+
+    <iframe
+        width="100%"
+        height="500"
+        src="https://www.youtube.com/embed/VmQ4qP3f4W8"
+        title="Video Wisata"
+        allowfullscreen>
+    </iframe>
+</section>
+
+<!-- Kontak -->
+<section id="kontak" class="container">
+    <div class="card">
+        <h2>Hubungi Kami</h2>
+
+        <form>
+            <input type="text" placeholder="Nama">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Pesan"></textarea>
+
+            <button>Kirim</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Eksplor Wisata Jawa Tengah</p>
+</footer>
 
 </body>
 </html>
