@@ -3,55 +3,46 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Video Wisata Jawa Tengah</title>
 
-<link rel="stylesheet" href="css/style.css">
-
-<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 
 <style>
-
-.video-container{
-width:90%;
-margin:auto;
-padding:40px 0;
+.video-section{
+    width:90%;
+    margin:auto;
+    padding:50px 0;
 }
 
 .video-card{
-background:white;
-padding:20px;
-margin-bottom:30px;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,.2);
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
 }
 
-.video-card video{
-width:100%;
-border-radius:10px;
+.video-card h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#00695c;
 }
 
 .video-card iframe{
-width:100%;
-height:500px;
-border-radius:10px;
-border:none;
+    width:100%;
+    height:600px;
+    border:none;
+    border-radius:15px;
 }
 
-h2{
-margin-top:15px;
-color:#00695c;
+.video-card p{
+    margin-top:20px;
+    text-align:justify;
+    line-height:1.8;
 }
-
 </style>
 
 </head>
-
 <body>
-
-<audio autoplay loop>
-<source src="audio/video.mp3" type="audio/mpeg">
-</audio>
 
 <header>
 <nav>
@@ -65,75 +56,39 @@ color:#00695c;
 </nav>
 </header>
 
-<section class="hero" style="height:60vh;">
+<section class="hero">
 <div>
 <h1>Video Wisata Jawa Tengah</h1>
-<p>Jelajahi keindahan Jawa Tengah melalui video.</p>
+<p>Nikmati keindahan Jawa Tengah melalui video berikut</p>
 </div>
 </section>
 
-<div class="video-container">
+<section class="video-section">
 
-<div class="video-card" data-aos="fade-up">
+<div class="video-card">
 
-<h2>Candi Borobudur</h2>
+<h2>Eksplor Wisata Jawa Tengah</h2>
 
 <iframe
-src="https://youtu.be/5QfGuvzNOJ8?si=2ooLrpTiNkkSQNI_"
+src="https://www.youtube.com/embed/5QfGuvzNOJ8"
+title="Video Wisata Jawa Tengah"
 allowfullscreen>
 </iframe>
 
 <p>
-Candi Borobudur merupakan salah satu destinasi wisata
-terkenal di Indonesia yang menjadi warisan dunia UNESCO.
+Jawa Tengah memiliki berbagai destinasi wisata yang menakjubkan,
+mulai dari Candi Borobudur, Dataran Tinggi Dieng, Lawang Sewu,
+hingga berbagai wisata alam dan budaya yang menjadi daya tarik
+wisatawan dari seluruh Indonesia maupun mancanegara.
 </p>
 
 </div>
 
-<div class="video-card" data-aos="fade-right">
-
-<h2>Dataran Tinggi Dieng</h2>
-
-<iframe
-src="https://www.youtube.com/embed/4SYkGxjX7TI"
-allowfullscreen>
-</iframe>
-
-<p>
-Dieng menawarkan pemandangan pegunungan, kawah,
-dan budaya khas masyarakat Jawa Tengah.
-</p>
-
-</div>
-
-<div class="video-card" data-aos="fade-left">
-
-<h2>Lawang Sewu Semarang</h2>
-
-<iframe
-src="https://www.youtube.com/embed/Gx1nWjE4K2E"
-allowfullscreen>
-</iframe>
-
-<p>
-Bangunan bersejarah yang menjadi ikon Kota Semarang.
-</p>
-
-</div>
-
-</div>
+</section>
 
 <footer>
 <p>© 2026 Eksplor Wisata Jawa Tengah</p>
 </footer>
-
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-<script>
-AOS.init({
-duration:1500
-});
-</script>
 
 </body>
 </html>
